@@ -13,6 +13,6 @@ jobs:
               run: |
                 docker build -t ghcr.io/nreeazz/aplikasi-laravel  ./laravel
             - name: Login 
-              run: echo "{{ secrets.TOKEN }}" | docker login ghcr.io -u nreeazz --password-stdin
+              run: echo "${{ secrets.TOKEN }}" | docker login ghcr.io -u nreeazz --password-stdin
             - name: push
               run: docker push ghcr.io/nreeazz/aplikasi-laravel 
