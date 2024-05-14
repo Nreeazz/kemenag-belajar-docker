@@ -11,5 +11,7 @@ jobs:
     deploy:
         runs-on: ubuntu-latest
         steps:
+            - name: deploy
+              run: echo "Deploy Please"
             - name: build
-              run: echo "Hello World!"
+              run: echo "build please"
