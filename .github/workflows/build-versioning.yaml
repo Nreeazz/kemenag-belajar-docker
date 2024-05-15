@@ -1,4 +1,4 @@
-name: Build Versioning
+name: Versioning
 on:
     push:
         tags:
