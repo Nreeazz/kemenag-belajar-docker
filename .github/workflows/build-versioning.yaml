@@ -1,4 +1,4 @@
-name: Build Docker Images with Versioning
+name: Build Versioning
 on:
     push:
         tags:
