@@ -13,6 +13,8 @@ jobs:
         steps:
             - name: checkout
               uses: actions/checkout@v3
+            - name: show tag version
+              run: echo $RELEASE_VERSION
             - name: Build Docker Image
               run: |
                 docker build -t ghcr.io/nreeazz/aplikasi-laravel:$RELEASE_VERSION  ./laravel
